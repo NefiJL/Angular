@@ -1,0 +1,34 @@
+<p>data-binding works!</p>
+<section>
+  <h3>Interpolação</h3>
+  <p>Nome: {{nome}}</p>
+  <p>1 + 1 é igual: {{1 + 1}}</p>
+  <p>1 + 1 não é igual: {{1 + 1 + getValor()}}</p>
+
+
+
+  </section>
+  <section>
+    <h3>Propriety Binding</h3>
+  <img  style="width:100px; height: 100px;"[src]="url">
+  <p [hidden]= "esconderTexto">Olá mundo</p>
+  <p [hidden]= "!esconderTexto">Olá mundo de novo</p>
+  </section>
+  <section>
+    <h3>Event Binding</h3>
+    <p>Valor digitado: {{valorDigitado}}</p>
+    <input type="text" (keyup)="onKeyUp($event)">
+    <br>
+    <button (click)="clique()">Clique aqui</button>
+    <br>
+
+    <span (mouseover)="onMouseOver()"
+     (mouseout)="onMouseOut()">Passe o mouse </span>
+    <p>Status do mouse: {{isMouseOver}}</p>
+  </section>
+  <section>
+    <h3>Two way data binding</h3>
+    <input type="text" [(ngModel)]= "nome">
+    <br>
+    <p>Nome: {{nome}}</p>
+    </section>
