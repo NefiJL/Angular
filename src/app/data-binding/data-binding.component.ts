@@ -9,7 +9,7 @@ export class DataBindingComponent implements OnInit {
   nome: String = "Fulano"
   valorDigitado: string = ""
   isMouseOver: boolean = false;
-  url: String ="https://yt3.googleusercontent.com/ytc/AL5GRJWF9DhK1icziCNSd-0dyRCDbOU3_op5GLtFSJo0WA=s900-c-k-c0x00ffffff-no-rj"
+  url: String ="https://w0.peakpx.com/wallpaper/221/949/HD-wallpaper-bob-esponja-mafioso-bob-esponja-gangster-mafioso-meme.jpg"
   esconderTexto: boolean = true;
 
   getValor() {

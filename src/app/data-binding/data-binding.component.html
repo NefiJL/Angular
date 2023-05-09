@@ -11,19 +11,19 @@
   <section>
     <h3>Propriety Binding</h3>
   <img  style="width:100px; height: 100px;"[src]="url">
-  <p [hidden]= "esconderTexto">Olá mundo</p>
-  <p [hidden]= "!esconderTexto">Olá mundo de novo</p>
+  <p [hidden]= "esconderTexto">ja não estou aqui</p>
+  <p [hidden]= "!esconderTexto">Estou aqui</p>
   </section>
   <section>
     <h3>Event Binding</h3>
     <p>Valor digitado: {{valorDigitado}}</p>
     <input type="text" (keyup)="onKeyUp($event)">
     <br>
-    <button (click)="clique()">Clique aqui</button>
+    <button (click)="clique()">Quer clickar aqui?</button>
     <br>
 
     <span (mouseover)="onMouseOver()"
-     (mouseout)="onMouseOut()">Passe o mouse </span>
+     (mouseout)="onMouseOut()">Coloca o mause aqui:)</span>
     <p>Status do mouse: {{isMouseOver}}</p>
   </section>
   <section>
